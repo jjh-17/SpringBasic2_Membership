@@ -1,10 +1,9 @@
-package spring_basic2.Membership2.order;
+package spring_basic2.Membership2.order.service;
 
 import spring_basic2.Membership2.discount.DiscountPolicy;
-import spring_basic2.Membership2.discount.RateDiscountPolicy;
 import spring_basic2.Membership2.member.Member;
-import spring_basic2.Membership2.member.MemberRepository;
-import spring_basic2.Membership2.member.MemoryMemberRepository;
+import spring_basic2.Membership2.member.repository.MemberRepository;
+import spring_basic2.Membership2.order.Order;
 
 /*
 OrderServiceImpl을 DIP 준수하도록 수정
@@ -28,5 +27,10 @@ public class OrderServiceImplDIP implements OrderService {
         int discountPrice = discountPolicy.discount(member, productPrice);
 
         return new Order(memberId, productName, productPrice, discountPrice);
+    }
+
+    //Configuration Test에서 사용
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
     }
 }

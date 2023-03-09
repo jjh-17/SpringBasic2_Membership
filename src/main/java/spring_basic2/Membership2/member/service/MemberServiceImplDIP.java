@@ -1,4 +1,7 @@
-package spring_basic2.Membership2.member;
+package spring_basic2.Membership2.member.service;
+
+import spring_basic2.Membership2.member.Member;
+import spring_basic2.Membership2.member.repository.MemberRepository;
 
 //MemberServiceImpl을 DIP 준수하도록 수정
 public class MemberServiceImplDIP implements MemberService{
@@ -19,5 +22,10 @@ public class MemberServiceImplDIP implements MemberService{
     @Override
     public Member findMember(Long memberId) {
         return memberRepository.findById(memberId);
+    }
+
+    //ConfigurationTest에서 사용
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
     }
 }

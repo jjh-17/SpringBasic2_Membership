@@ -8,9 +8,10 @@ import spring_basic2.Membership2.AppDIPConfig;
 import spring_basic2.Membership2.AppDIPConfigRefactored;
 import spring_basic2.Membership2.enumeration.Grade;
 import spring_basic2.Membership2.member.Member;
-import spring_basic2.Membership2.member.MemberService;
-import spring_basic2.Membership2.member.MemberServiceImpl;
-import spring_basic2.Membership2.member.MemberServiceImplDIP;
+import spring_basic2.Membership2.member.service.MemberService;
+import spring_basic2.Membership2.member.service.MemberServiceImpl;
+import spring_basic2.Membership2.order.service.OrderService;
+import spring_basic2.Membership2.order.service.OrderServiceImpl;
 
 public class OrderServiceTest {
 

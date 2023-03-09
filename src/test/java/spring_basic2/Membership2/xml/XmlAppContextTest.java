@@ -6,11 +6,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 import spring_basic2.Membership2.discount.DiscountPolicy;
-import spring_basic2.Membership2.member.MemberRepository;
-import spring_basic2.Membership2.member.MemberService;
-import spring_basic2.Membership2.order.OrderService;
-
-import javax.swing.plaf.basic.BasicBorders;
+import spring_basic2.Membership2.member.repository.MemberRepository;
+import spring_basic2.Membership2.member.service.MemberService;
+import spring_basic2.Membership2.order.service.OrderService;
 
 public class XmlAppContextTest {
     @Test

@@ -1,4 +1,6 @@
-package spring_basic2.Membership2.member;
+package spring_basic2.Membership2.member.service;
+
+import spring_basic2.Membership2.member.Member;
 
 public interface MemberService {
     void join(Member member);           //회원 가입

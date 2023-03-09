@@ -1,4 +1,8 @@
-package spring_basic2.Membership2.member;
+package spring_basic2.Membership2.member.service;
+
+import spring_basic2.Membership2.member.Member;
+import spring_basic2.Membership2.member.repository.MemberRepository;
+import spring_basic2.Membership2.member.repository.MemoryMemberRepository;
 
 public class MemberServiceImpl implements MemberService{
 

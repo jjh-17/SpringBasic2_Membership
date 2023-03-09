@@ -7,7 +7,7 @@ import spring_basic2.Membership2.AppDIPConfig;
 import spring_basic2.Membership2.AppDIPConfigRefactored;
 import spring_basic2.Membership2.enumeration.Grade;
 import spring_basic2.Membership2.member.Member;
-import spring_basic2.Membership2.member.MemberService;
+import spring_basic2.Membership2.member.service.MemberService;
 
 public class MemberApp {
     public static void main(String[] args) {

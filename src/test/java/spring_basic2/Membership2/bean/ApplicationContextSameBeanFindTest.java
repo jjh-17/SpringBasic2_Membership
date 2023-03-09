@@ -7,8 +7,8 @@ import org.springframework.beans.factory.NoUniqueBeanDefinitionException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import spring_basic2.Membership2.member.MemberRepository;
-import spring_basic2.Membership2.member.MemoryMemberRepository;
+import spring_basic2.Membership2.member.repository.MemberRepository;
+import spring_basic2.Membership2.member.repository.MemoryMemberRepository;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;

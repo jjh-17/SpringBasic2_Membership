@@ -1,11 +1,11 @@
 package spring_basic2.Membership2;
 
 import spring_basic2.Membership2.discount.RateDiscountPolicy;
-import spring_basic2.Membership2.member.MemberService;
-import spring_basic2.Membership2.member.MemberServiceImplDIP;
-import spring_basic2.Membership2.member.MemoryMemberRepository;
-import spring_basic2.Membership2.order.OrderService;
-import spring_basic2.Membership2.order.OrderServiceImplDIP;
+import spring_basic2.Membership2.member.service.MemberService;
+import spring_basic2.Membership2.member.service.MemberServiceImplDIP;
+import spring_basic2.Membership2.member.repository.MemoryMemberRepository;
+import spring_basic2.Membership2.order.service.OrderService;
+import spring_basic2.Membership2.order.service.OrderServiceImplDIP;
 
 /*
 애플리케이션의 동작에 필요한 구현 객체 생성

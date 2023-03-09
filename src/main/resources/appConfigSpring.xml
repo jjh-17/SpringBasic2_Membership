@@ -3,14 +3,14 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="memberRepository" class="spring_basic2.Membership2.member.MemoryMemberRepository"/>
+    <bean id="memberRepository" class="spring_basic2.Membership2.member.repository.MemoryMemberRepository"/>
     <bean id="discountPolicy" class="spring_basic2.Membership2.discount.RateDiscountPolicy"/>
 
-    <bean id="memberService" class="spring_basic2.Membership2.member.MemberServiceImplDIP">
+    <bean id="memberService" class="spring_basic2.Membership2.member.service.MemberServiceImplDIP">
         <constructor-arg name="memberRepository" ref="memberRepository"/>
     </bean>
 
-    <bean id="orderService" class="spring_basic2.Membership2.order.OrderServiceImplDIP">
+    <bean id="orderService" class="spring_basic2.Membership2.order.service.OrderServiceImplDIP">
         <constructor-arg name="memberRepository" ref="memberRepository"/>
         <constructor-arg name="discountPolicy" ref="discountPolicy"/>
     </bean>

@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import spring_basic2.Membership2.AppDIPConfig;
 import spring_basic2.Membership2.AppDIPConfigRefactored;
 import spring_basic2.Membership2.enumeration.Grade;
+import spring_basic2.Membership2.member.service.MemberService;
+import spring_basic2.Membership2.member.service.MemberServiceImpl;
 
 public class MemberServiceTest {
 

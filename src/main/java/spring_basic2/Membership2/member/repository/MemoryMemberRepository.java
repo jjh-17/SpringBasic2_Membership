@@ -1,4 +1,6 @@
-package spring_basic2.Membership2.member;
+package spring_basic2.Membership2.member.repository;
+
+import spring_basic2.Membership2.member.Member;
 
 import java.util.HashMap;
 import java.util.Map;
