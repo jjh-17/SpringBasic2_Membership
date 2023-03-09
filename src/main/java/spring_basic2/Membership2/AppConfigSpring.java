@@ -19,6 +19,7 @@ import spring_basic2.Membership2.order.OrderServiceImplDIP;
 public class AppConfigSpring {
     @Bean //아래 메서드를 스프링 컨테이너에 스프링 빈으로 등록한다.
     public MemberService memberService() {
+        //생성자 주입
         return new MemberServiceImplDIP(memberRepository());
     }
     @Bean
