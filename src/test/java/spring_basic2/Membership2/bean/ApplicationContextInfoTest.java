@@ -4,7 +4,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import spring_basic2.Membership2.AppConfigSpring;
+import spring_basic2.Membership2.configuration.AppConfigSpring;
 
 /*
 스프링 컨터이너에 속한 스프링 빈 정보를 조회하여 테스트

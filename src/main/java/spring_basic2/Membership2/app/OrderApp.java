@@ -2,9 +2,9 @@ package spring_basic2.Membership2.app;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import spring_basic2.Membership2.AppConfigSpring;
-import spring_basic2.Membership2.AppDIPConfig;
-import spring_basic2.Membership2.AppDIPConfigRefactored;
+import spring_basic2.Membership2.configuration.AppConfigSpring;
+import spring_basic2.Membership2.configuration.AppDIPConfig;
+import spring_basic2.Membership2.configuration.AppDIPConfigRefactored;
 import spring_basic2.Membership2.enumeration.Grade;
 import spring_basic2.Membership2.member.Member;
 import spring_basic2.Membership2.member.service.MemberService;

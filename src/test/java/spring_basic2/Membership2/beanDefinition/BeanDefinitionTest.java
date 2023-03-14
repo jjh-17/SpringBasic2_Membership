@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
-import spring_basic2.Membership2.AppConfigSpring;
+import spring_basic2.Membership2.configuration.AppConfigSpring;
 
 public class BeanDefinitionTest {
     AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfigSpring.class);

@@ -1,13 +1,14 @@
 package spring_basic2.Membership2.member.repository;
 
 import org.springframework.stereotype.Component;
+import spring_basic2.Membership2.filter.FilterAutoDI;
 import spring_basic2.Membership2.member.Member;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Component
-public class MemoryMemberRepositoryComponent implements MemberRepository {
+@FilterAutoDI
+public class MemoryMemberRepositoryAutoDI implements MemberRepository {
 
     //변수
     private static Map<Long, Member> store = new HashMap<>();

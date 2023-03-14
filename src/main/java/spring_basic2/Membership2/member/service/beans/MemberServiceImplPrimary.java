@@ -1,18 +1,18 @@
-package spring_basic2.Membership2.member.service;
+package spring_basic2.Membership2.member.service.beans;
 
-import org.springframework.stereotype.Component;
+import lombok.RequiredArgsConstructor;
+import spring_basic2.Membership2.filter.FilterLombok;
+import spring_basic2.Membership2.filter.FilterPrimary;
 import spring_basic2.Membership2.member.Member;
 import spring_basic2.Membership2.member.repository.MemberRepository;
+import spring_basic2.Membership2.member.service.MemberService;
 
-@Component
-public class MemberServiceImplDIPComponent implements MemberService{
+//AppConfigLombok 만이 스캔하도록 필터링
+@FilterPrimary
+@RequiredArgsConstructor //final이 붙은 필드를 모아서 생성자 자동 생성
+public class MemberServiceImplPrimary implements MemberService {
     //변수
     private final MemberRepository memberRepository;
-
-    public MemberServiceImplDIPComponent(MemberRepository memberRepository) {
-        //MemberRepository의 구현체 중 하나로 초기화 ==> DIP 준수
-        this.memberRepository = memberRepository;
-    }
 
     //메서드
     @Override

@@ -1,4 +1,4 @@
-package spring_basic2.Membership2;
+package spring_basic2.Membership2.configuration;
 
 import spring_basic2.Membership2.discount.RateDiscountPolicy;
 import spring_basic2.Membership2.member.service.MemberService;

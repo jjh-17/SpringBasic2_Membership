@@ -5,7 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import spring_basic2.Membership2.AppConfigSpring;
+import spring_basic2.Membership2.configuration.AppConfigSpring;
 import spring_basic2.Membership2.member.service.MemberService;
 import spring_basic2.Membership2.member.service.MemberServiceImplDIP;
 

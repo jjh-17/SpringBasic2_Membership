@@ -2,10 +2,11 @@ package spring_basic2.Membership2.discount;
 
 import org.springframework.stereotype.Component;
 import spring_basic2.Membership2.enumeration.Grade;
+import spring_basic2.Membership2.filter.FilterAutoDI;
 import spring_basic2.Membership2.member.Member;
 
-@Component
-public class RateDiscountPolicyComponent implements DiscountPolicy{
+@FilterAutoDI
+public class RateDiscountPolicyAutoDI implements DiscountPolicy{
 
     //변수
     private int ratedDiscountAmount = 10;
