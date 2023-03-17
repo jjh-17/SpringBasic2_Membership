@@ -1,13 +1,15 @@
 package spring_basic2.Membership2.member.repository.beans;
 
-import spring_basic2.Membership2.filter.FilterPrimary;
+import spring_basic2.Membership2.filter.FilterMultiBeanUse;
+import spring_basic2.Membership2.filter.FilterQualifier2;
 import spring_basic2.Membership2.member.Member;
 import spring_basic2.Membership2.member.repository.MemberRepository;
+
 import java.util.HashMap;
 import java.util.Map;
 
-@FilterPrimary
-public class MemoryMemberRepositoryPrimary implements MemberRepository {
+@FilterMultiBeanUse
+public class MemoryMemberRepositoryMultiBeanUse implements MemberRepository {
     //변수
     private static Map<Long, Member> store = new HashMap<>();
 

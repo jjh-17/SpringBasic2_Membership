@@ -10,11 +10,11 @@ import spring_basic2.Membership2.filter.*;
         basePackages = "spring_basic2.Membership2",
         excludeFilters = @ComponentScan.Filter(
                 type = FilterType.ANNOTATION,
-                classes = {Configuration.class, FilterLombok.class, FilterFieldMatch.class, FilterMultiBeanUse.class,
-                        FilterAutoDI.class, FilterPrimary.class, FilterQualifier.class}),
+                classes = {Configuration.class, FilterLombok.class, FilterFieldMatch.class,
+                        FilterAutoDI.class, FilterPrimary.class, FilterQualifier.class, FilterQualifier2.class}),
         includeFilters = @ComponentScan.Filter(
                 type = FilterType.ANNOTATION,
-                classes = FilterQualifier2.class)
+                classes = FilterMultiBeanUse.class)
 )
-public class AppConfigQualifier2 {
+public class AppConfigMultiBeanUse {
 }

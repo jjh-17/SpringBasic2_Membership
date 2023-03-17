@@ -53,7 +53,7 @@ import spring_basic2.Membership2.filter.*;
         //@Configuration은 @Component를 포함하기 때문에, 예제 코드의 보존을 위해 @Configuration 제외
         excludeFilters = @ComponentScan.Filter(
                 type = FilterType.ANNOTATION,
-                classes = {Configuration.class, FilterLombok.class, FilterFieldMatch.class,
+                classes = {Configuration.class, FilterLombok.class, FilterFieldMatch.class, FilterMultiBeanUse.class,
                         FilterQualifier.class, FilterQualifier2.class, FilterPrimary.class}),
         includeFilters = @ComponentScan.Filter(
                 type = FilterType.ANNOTATION,

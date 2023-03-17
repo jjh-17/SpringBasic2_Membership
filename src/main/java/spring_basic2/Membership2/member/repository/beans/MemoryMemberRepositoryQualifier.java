@@ -9,10 +9,8 @@ import java.util.Map;
 //AppConfigQualifier 만이 스캔하도록 필터링
 @FilterQualifier
 public class MemoryMemberRepositoryQualifier implements MemberRepository {
-
     //변수
     private static Map<Long, Member> store = new HashMap<>();
-
 
     //메서드
     @Override

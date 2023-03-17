@@ -3,13 +3,14 @@ package spring_basic2.Membership2.discount.beans;
 import org.springframework.context.annotation.Primary;
 import spring_basic2.Membership2.discount.DiscountPolicy;
 import spring_basic2.Membership2.enumeration.Grade;
-import spring_basic2.Membership2.filter.FilterLombok;
-import spring_basic2.Membership2.filter.FilterPrimary;
+import spring_basic2.Membership2.filter.FilterMultiBeanUse;
+import spring_basic2.Membership2.filter.FilterQualifier2;
+import spring_basic2.Membership2.filter.MainDiscountPolicy;
 import spring_basic2.Membership2.member.Member;
 
-@FilterPrimary
-@Primary //동일한 타입의 빈이 여러 개 등록되었을 때, 해당 타입의 빈을 호출하면 @Primary가 우선권을 가진다. 단 한번만 선언되어야한다.
-public class RateDiscountPolicyPrimary implements DiscountPolicy {
+@FilterMultiBeanUse
+@Primary
+public class RateDiscountPolicyMultiBeanUse implements DiscountPolicy {
 
     //변수
     private int ratedDiscountAmount = 10;
