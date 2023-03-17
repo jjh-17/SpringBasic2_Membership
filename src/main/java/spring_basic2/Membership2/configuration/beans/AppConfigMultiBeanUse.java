@@ -3,6 +3,7 @@ package spring_basic2.Membership2.configuration.beans;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
+import spring_basic2.Membership2.filter.FilterFieldMatch;
 import spring_basic2.Membership2.filter.*;
 
 @Configuration

@@ -1,10 +1,8 @@
 package spring_basic2.Membership2.order.service.beans;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import spring_basic2.Membership2.discount.DiscountPolicy;
 import spring_basic2.Membership2.filter.FilterFieldMatch;
-import spring_basic2.Membership2.filter.FilterLombok;
 import spring_basic2.Membership2.member.Member;
 import spring_basic2.Membership2.member.repository.MemberRepository;
 import spring_basic2.Membership2.order.Order;

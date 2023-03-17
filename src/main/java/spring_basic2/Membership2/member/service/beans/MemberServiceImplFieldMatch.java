@@ -2,7 +2,6 @@ package spring_basic2.Membership2.member.service.beans;
 
 import lombok.RequiredArgsConstructor;
 import spring_basic2.Membership2.filter.FilterFieldMatch;
-import spring_basic2.Membership2.filter.FilterLombok;
 import spring_basic2.Membership2.member.Member;
 import spring_basic2.Membership2.member.repository.MemberRepository;
 import spring_basic2.Membership2.member.service.MemberService;

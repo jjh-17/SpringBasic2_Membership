@@ -3,7 +3,6 @@ package spring_basic2.Membership2.discount.beans;
 import org.springframework.beans.factory.annotation.Qualifier;
 import spring_basic2.Membership2.discount.DiscountPolicy;
 import spring_basic2.Membership2.enumeration.Grade;
-import spring_basic2.Membership2.filter.FilterFieldMatch;
 import spring_basic2.Membership2.filter.FilterQualifier;
 import spring_basic2.Membership2.member.Member;
 
